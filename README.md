@@ -13,11 +13,11 @@
 - recpt1
   b25デコードをする場合、事前に https://github.com/AngieKawai-4649/libarib25 を導入する  
   事前に https://github.com/AngieKawai-4649/channelconf を導入する（必須）  
-  git clone https://github.com/AngieKawai-4649/recpt1.git
+  git clone https://github.com/AngieKawai-4649/recpt1.git  
   $ cd recpt1/recpt1  
   $ make [オプション]  
   オプションはMakefileコメントを参照  
-  $ sudo make install
+  $ sudo make install  
 - driver  
   $ cd recpt1/driver  
   $ make  
