@@ -11,9 +11,9 @@
 
 ## 【ビルド】
 - recpt1
-  b25デコードをする場合、事前にhttps://github.com/AngieKawai-4649/libarib25 を導入する  
-  事前にhttps://github.com/AngieKawai-4649/channelconf を導入する（必須）  
-  
+  b25デコードをする場合、事前に https://github.com/AngieKawai-4649/libarib25 を導入する  
+  事前に https://github.com/AngieKawai-4649/channelconf を導入する（必須）  
+  git clone https://github.com/AngieKawai-4649/recpt1.git
   $ cd recpt1/recpt1  
   $ make [オプション]  
   オプションはMakefileコメントを参照  
@@ -21,7 +21,8 @@
 - driver  
   $ cd recpt1/driver  
   $ make  
-  $ sudo make install
+  以降は https://github.com/AngieKawai-4649/pt3 ドライバーインストールを参照  
+  pt3_drv を pt1_drv に読み替えれば同様の手順である  
 
 
 
