@@ -10,7 +10,7 @@
 4. プログラムコンスタントに所持していたチャンネル情報を削除しchannelconfから取得するように修正
 
 ## 【ビルド】
-- recpt1
+- recpt1  
   b25デコードをする場合、事前に https://github.com/AngieKawai-4649/libarib25 を導入する  
   事前に https://github.com/AngieKawai-4649/channelconf を導入する（必須）  
   git clone https://github.com/AngieKawai-4649/recpt1.git  
