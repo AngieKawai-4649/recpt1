@@ -95,17 +95,20 @@
     http://192.168.1.5:4648/UHF_16/23608
     #EXTINF:-1, ＴＯＫＹＯ　ＭＸ２
     http://192.168.1.5:4648/UHF_16/23610
-    
     #EXTINF:-1, ｔｖｋ１
     http://192.168.1.5:4648/UHF_18/24632
 
 ## recpt1ctl
-recpt1ctlはTS受信中のrecpt1のチャンネルを切り替える際に使用する
-IPC メッセージキューで実装している
-recpt1のPIDを指定してメッセージキューを送信→recpt1がキューを受信してチャンネルを切り替える
-使用例
-recpt1ctl --pid 5745 --channel UHF_24 --sid 1064 - -
+recpt1ctlはTS受信中のrecpt1のチャンネルを切り替える際に使用する  
+IPC メッセージキューで実装している  
+recpt1のPIDを指定してメッセージキューを送信→recpt1がキューを受信してチャンネルを切り替える  
+使用例  
+$ recpt1ctl --pid 5745 --channel UHF_24 --sid 1064 - -  
 
+## checksignal
+C/Nをチェックするツール  
+使用例  
+$ checksignal --device /dev/pt3video3 --bell UHF_16  
 
 
     
