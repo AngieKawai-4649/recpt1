@@ -103,7 +103,7 @@
 使用例  
 recpt1 --udp --addr 192.168.1.10 --port 4649 --b25 --device /dev/pt3video2 UHF_23 30 bbb.ts  
 録画をしながら指定したIPアドレス (192.168.1.10 port 4649) 宛にTSを送信する    
-※ 時間を指定しても無視している（プロセスKILLしないと終わらない）
+※ 時間を指定しても無視している（プロセスKILLしないと終わらない）  
 ※ 恐らくMirakurunでrecpt1を起動しながら特定のPCにUDP配信する意図だと思う  
 
 ## recpt1ctl
