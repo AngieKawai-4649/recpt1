@@ -55,6 +55,7 @@
       decoder:
       isDisabled: false
   - HTTP サーバーとして起動する
+    (Mirakurunを導入している場合、MirakurunがHTTP配信をしているのでこの機能は必要ない)  
 ### 例：
     PT3を実装しているPCで以下を起動（デーモン起動される）
     PT3 S0
@@ -100,8 +101,8 @@
 
 - UDPサーバーとして起動する  
 使用例  
-recpt1 --udp --addr 192.168.1.10 --port 4649 --b25 --device /dev/pt3video2 UHF_23 - -  
-192.168.1.10 port 4649 宛にTSを送信する
+recpt1 --udp --addr 192.168.1.10 --port 4649 --b25 --device /dev/pt3video2 UHF_23 30 bbb.ts  
+録画をしながら指定したIPアドレス (192.168.1.10 port 4649) 宛にTSを送信する  
 ※ 予め受信できる状態にしておく  
 
 ## recpt1ctl
@@ -110,10 +111,10 @@ IPC メッセージキューで実装している
 recpt1のPIDを指定してメッセージキューを送信→recpt1がキューを受信してチャンネルを切り替える  
 使用例  
 $ recpt1ctl --pid 5745 --channel UHF_24 --sid 1064 - -  
-メディアプレイヤー視聴中に当機能でチャンネルを切り替えると
-※ TVTestのようにバッファを読み捨てる機能が無いので再生不良となる場合がある
+メディアプレイヤー視聴中に当機能でチャンネルを切り替えると  
+※ TVTestのようにバッファを読み捨てる機能が無いので再生不良となる場合がある  
 
-## checksignal
+## checksignal  
 C/Nをチェックするツール  
 使用例  
 $ checksignal --device /dev/pt3video3 --bell UHF_16  
