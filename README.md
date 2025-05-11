@@ -1,4 +1,4 @@
-# Linux用PT1/PT2/PT3用チューナーアプリケーション
+# PT1/PT2/PT3用Linuxチューナーアプリケーション
 
 ベース recpt1 HTTPサーバ版RC4 + α（STZ版）
 
