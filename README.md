@@ -54,7 +54,7 @@
       command: recpt1 --dev /dev/pt1video3 --b25 <channel> - -
       decoder:
       isDisabled: false
-  - HTTP サーバーとして起動する
+  - HTTP サーバーとして起動する  
     (Mirakurunを導入している場合、MirakurunがHTTP配信をしているのでこの機能は必要ない)  
 ### 例：
     PT3を実装しているPCで以下を起動（デーモン起動される）
@@ -103,7 +103,8 @@
 使用例  
 recpt1 --udp --addr 192.168.1.10 --port 4649 --b25 --device /dev/pt3video2 UHF_23 30 bbb.ts  
 録画をしながら指定したIPアドレス (192.168.1.10 port 4649) 宛にTSを送信する  
-※ 予め受信できる状態にしておく  
+※ 予め受信できる状態にしておく
+※ 時間を指定しても無視している（プロセスKILLしないと終わらない）  
 
 ## recpt1ctl
 recpt1ctlはTS受信中のrecpt1のチャンネルを切り替える際に使用する  
