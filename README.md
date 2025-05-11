@@ -25,8 +25,34 @@
   pt3_drv を pt1_drv に読み替えれば同様の手順である  
 
 ##  【使い方】
-- Mirakurunから起動するチューナーアプリケーションとして
-  
-
+- Mirakurunから起動するチューナーアプリケーションとして  
+  Mirakurun tuners.yml にrecpt1を起動登録する  
+### 例：  
+    - name: PT2-S1
+      types:
+        - BS
+        - CS
+      command: recpt1 --dev /dev/pt1video0 --b25 <channel> - -
+      decoder:
+      isDisabled: false
+    - name: PT2-S2
+      types:
+        - BS
+        - CS
+      command: recpt1 --dev /dev/pt1video1 --b25 <channel> - -
+      decoder:
+      isDisabled: false
+    - name: PT2-T1
+      types:
+        - GR
+      command: recpt1 --dev /dev/pt1video2 --b25 <channel> - -
+      decoder:
+      isDisabled: false
+    - name: PT2-T2
+      types:
+        - GR
+      command: recpt1 --dev /dev/pt1video3 --b25 <channel> - -
+      decoder:
+      isDisabled: false
   
 
