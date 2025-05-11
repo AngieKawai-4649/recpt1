@@ -24,7 +24,9 @@
   以降は https://github.com/AngieKawai-4649/pt3 ドライバーインストールを参照  
   pt3_drv を pt1_drv に読み替えれば同様の手順である  
 
-
+##  【使い方】
+- Mirakurunから起動するチューナーアプリケーションとして
+  
 
   
 
